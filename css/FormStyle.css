@@ -1,0 +1,100 @@
+.form {
+  max-width: 500px;
+  margin: 5px auto;
+  background: #fff;
+  border-radius: 10px;
+  border: 3px solid #038b3ed8;
+  padding: 20px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+.form h1 {
+  display: block;
+  text-align: center;
+  padding: 0;
+  margin: 0px 0px 20px 0px;
+  color: #5c5c5c;
+  font-size: x-large;
+}
+.form ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.form li {
+  display: block;
+  padding: 9px;
+  border: 2px solid #161515;
+  margin-bottom: 30px;
+  border-radius: 3px;
+}
+.form li:last-child {
+  border: none;
+  margin-bottom: 0px;
+  text-align: center;
+}
+.form li > label {
+  display: block;
+  float: left;
+  margin-top: -22px;
+  background: #ffffff;
+  height: 22px;
+  padding: 0px 5px 15px 5px;
+  color: #161515;
+  font-size: 18px;
+  overflow: hidden;
+  font-family: "Poppins", sans-serif;
+}
+.form input[type="text"],
+.form input[type="date"],
+.form input[type="datetime"],
+.form input[type="email"],
+.form input[type="number"],
+.form input[type="search"],
+.form input[type="time"],
+.form input[type="url"],
+.form input[type="password"],
+.form textarea,
+.form select {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  width: 100%;
+  display: block;
+  outline: none;
+  border: none;
+  height: 25px;
+  line-height: 25px;
+  font-size: 16px;
+  padding-left: 5px;
+  border-radius: 5px;
+  font-family: "Poppins", sans-serif;
+  margin-bottom: 5px;
+}
+
+.form li > span {
+  background: #f3f3f3;
+  display: block;
+  padding: 3px;
+  margin: 0 -9px -9px -9px;
+  text-align: center;
+  color: #4c4c4c;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 11px;
+}
+.form textarea {
+  resize: none;
+}
+.form input[type="submit"],
+.form input[type="button"] {
+  background: #037334;
+  border: none;
+  padding: 10px 20px 10px 20px;
+  border-bottom: 3px solid #037334;
+  border-radius: 3px;
+  color: #d2e2ff;
+}
+.form input[type="submit"]:hover,
+.form input[type="button"]:hover {
+  background: #038b3e;
+  color: #fff;
+}

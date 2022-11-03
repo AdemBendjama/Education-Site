@@ -1,0 +1,78 @@
+
+
+/*SideBar*/
+
+#sidebar {
+    min-height: 100vh;
+    z-index: 1000;
+    left: 250px;
+    width: 250px;
+    overflow-y: auto;
+    background: #208C3B;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+#sidebar header {
+    background-color: #037334;
+    font-size: 20px;
+    line-height: 52px;
+    text-align: center;
+}
+
+#sidebar header a {
+    color: #fff;
+    display: block;
+    text-decoration: none;
+}
+
+#sidebar header a:hover {
+    color: #fff;
+}
+
+#sidebar .nav {
+    display: block;
+}
+
+#sidebar .nav li {
+    padding: 16px 24px;
+    background: none;
+    border-bottom: 1px solid #00ff4c41;
+    color: #faeded;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+
+#sidebar .nav a {
+    text-align: center;
+    background: none;
+    color: #faeded;
+    font-size: 16px;
+    text-decoration: none;
+    position: relative;
+}
+
+#sidebar .nav a:hover {
+    background: none;
+    color: #faeded;
+}
+
+
+#sidebar .nav a::before {
+    content: "";
+    width: 0%;
+    height: 2px;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    background-color: white;
+    transition: 0.5s ease;
+}
+
+#sidebar .nav a:hover::before {
+    width: 100%;
+}
