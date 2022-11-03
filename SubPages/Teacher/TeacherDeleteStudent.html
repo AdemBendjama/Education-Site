@@ -3,7 +3,7 @@
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Student</title>
+    <title>Teacher</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -13,29 +13,30 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap" rel="stylesheet" />
 
-    <link rel="stylesheet" href="../../css/footer.css">
     <link rel='stylesheet' href='../../css/header.css'>
+    <link rel="stylesheet" href="../../css/footer.css">
     <link rel="stylesheet" href="../../css/sidebar.css">
     <link rel="stylesheet" href="../../css/UsersStyle.css">
+    <link rel="stylesheet" href="../../css/FormStyle.css">
 
 </head>
 <body>
     <div class="containers">
         <div class="Navbar">
             <div class="logo">
-                <a href="StudentMain.html"><img src="../../resources/Logo-04-removebg-preview.png" alt="logo"></a>
+                <a href="TeacherMain.html"><img src="../../resources/Logo-04-removebg-preview.png" alt="logo"></a>
             </div>
             <nav>
                 <ul>
                     <li>
                         <a href="../../index.html">
-                            Log Out
+                          Log Out
                         </a>
-                    </li>
+                      </li>
                     <li>
                         <img src="../../resources/teacher-24.png" alt="profile-pic grey icon">
-                        <a href="StudentMain.html">
-                            Adem Bendjama
+                        <a href="TeacherMain.html">
+                            Meriem Belguidoum
                         </a>
                     </li>
                 </ul>
@@ -50,33 +51,49 @@
                 <ul class="nav">
                     <li>
                         <img src="../../resources/list-2-24.png" alt="list-users grey icon">
-                        <a href="StudentMain.html">
-                            List Modules
+                        <a href="TeacherMain.html">
+                            Modules
+                        </a>
+                    </li>
+                    <li>
+                        <img src="../../resources/list-2-24.png" alt="list-users grey icon">
+                        <a href="TeacherListUsers.html">
+                            List Students
+                        </a>
+                    </li>
+                    <li>
+                        <img src="../../resources/remove-user-24.png" alt="list-users grey icon">
+                        <a href="TeacherDeleteStudent.html">
+                            Delete Student
                         </a>
                     </li>
                 </ul>
 
             </div>
 
-            <div class="page-content">
 
-                <table class="table table-dark">
-                    <thead>
-                        <tr>
-                            <td>Module</td>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td><a href="StudentModuleList.html">DAAW</a></td>
-                        </tr>
-                    </tbody>
-                </table>
+            <div class="page-content">
+                <form class="form" action="TeacherListUsers.html">
+                    <ul>
+                      <li>
+                        <label for="name">Name</label>
+                        <input type="text" name="name" id="delete-name" maxlength="100" required  spellcheck='false' />
+                        <span>Student Fullname [ Required ]</span>
+                      </li>
+                  
+                      <li>
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="delete-email" maxlength="100" required  spellcheck='false'/>
+                        <span>Student Email [ Required ]</span>
+                      </li>
+                      <li>
+                        <input type="submit" id="delete-submit" value="Delete" />
+                      </li>
+                    </ul>
+                  </form>
             </div>
 
         </div>
-
-    </div>
     </div>
     <div class="footer">
         <div>
@@ -91,6 +108,10 @@
             <p>Contact webmaster@univ-constantine2</p>
         </div>
     </div>
-
+    <script src="../../storage.js"></script>
+    <script src="scripts/TeacherMain.js"></script>
+    <script>
+         deleteUserForm();
+    </script>
 </body>
 </html>

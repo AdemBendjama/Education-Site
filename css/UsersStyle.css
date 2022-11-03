@@ -14,6 +14,7 @@ html {
 }
 
 .center-content {
+  margin-top: 64px;
   display: flex;
   height: 100%;
 }
@@ -60,9 +61,6 @@ html {
 
 
 /* List Of Users Table*/
-thead tr {
-  cursor: pointer;
-}
 
 .student-module table thead tr td,
 .student-module table tbody tr td{

@@ -1,27 +1,40 @@
-let users = [
-  {
-      name: "Web Master",
-      email: "wm.facntic@univ-constantine2.dz",
-      password: "webmaster",
-      type: "Admin"
-  },
-  {
-      name: "Adem Bendjama",
-      email: "adambendjamaa2013@gmail.com",
-      password: "adamben",
-      type: "Student"
-  },
-  {
-      name: "Meriem Belguidoum",
-      email: "meriem.belguidoum@univ-constantine2.dz",
-      password: "meriembel",
-      type: "Teacher"
-  }
-];
 // Assign a privilege character to each email
 // A => Admin
 // T => Teacher
 // S => Student
+
+let users = [
+];
+
+storageToList();
+
+/* add the adming account to the list */
+
+users.push({
+  name: "Web Master",
+  email: "wm.facntic@univ-constantine2.dz",
+  password: "webmaster",
+  type: "Admin"
+});
+
+/*================================================
+ local Storage Options */
+
+/* grab the local storage and transform it into a js array */
+function storageToList() {
+    //
+    let index = localStorage.getItem("index") - 1;
+
+    for (let i = 0; i <= index; i++) {
+        let user = {
+            name: localStorage.getItem("name" + i),
+            email: localStorage.getItem("email" + i),
+            password: localStorage.getItem("password" + i),
+            type: localStorage.getItem("type" + i)
+        }
+        users.push(user);
+    }
+}
 
 
 /* LOGIN */

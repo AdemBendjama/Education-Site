@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="../../css/sidebar.css">
     <link rel="stylesheet" href="../../css/UsersStyle.css">
 
+
 </head>
 <body>
     <div class="containers">
@@ -28,8 +29,13 @@
             <nav>
                 <ul>
                     <li>
+                        <a href="../../index.html">
+                            Log Out
+                        </a>
+                    </li>
+                    <li>
                         <img src="../../resources/admin-24.png" alt="profile-pic grey icon">
-                        <a href="AdminMain.html"  >
+                        <a href="AdminMain.html">
                             Web Master
                         </a>
                     </li>
@@ -37,7 +43,7 @@
             </nav>
         </div>
 
-        
+
         <div class="center-content">
             <div id="sidebar">
                 <header>
@@ -47,25 +53,25 @@
                     <li>
                         <img src="../../resources/list-2-24.png" alt="list-users grey icon">
                         <a href="AdminMain.html">
-                             List Users
+                            List Users
                         </a>
                     </li>
                     <li>
                         <img src="../../resources/change-user-24.png" alt="add-user grey icon">
                         <a href="AdminUpdateUser.html">
-                             Update a User
+                            Update a User
                         </a>
                     </li>
                     <li>
                         <img src="../../resources/remove-user-24.png" alt="add-user grey icon">
                         <a href="AdminDeleteUser.html">
-                             Delete a User
+                            Delete a User
                         </a>
                     </li>
                     <li>
                         <img src="../../resources/add-user-24.png" alt="add-user grey icon">
                         <a href="AdminAddUser.html">
-                             Add a User
+                            Add a User
                         </a>
                     </li>
 
@@ -74,9 +80,8 @@
 
             <div class="page-content">
                 <div class="options">
-                    <select  name="" id="button" class="button">
-                        <option value="id" selected>ID</option>
-                        <option value="name">Name</option>
+                    <select name="" id="sortButton" class="button">
+                        <option value="name" selected>Name</option>
                         <option value="email">Email</option>
                         <option value="type">Type</option>
                     </select>
@@ -91,21 +96,10 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <tr>
-                            <td>Adem Bendjama</td>
-                            <td>bendjamaaadam2013@gmail.com</td>
-                            <td>adam159753654</td>
-                            <td>Student</td>
-                        </tr>
-                        <tr>
-                            <td>Meriem Belguidoum</td>
-                            <td>meriem.belguidoum@univ-constantine2.dz</td>
-                            <td>meriembel8080</td>
-                            <td>Teacher</td>
-                        </tr>
+
                     </tbody>
                 </table>
-                
+
             </div>
 
         </div>
@@ -124,5 +118,11 @@
         </div>
     </div>
 
+    <script src="../../storage.js"></script>
+    <script src="scripts/adminMain.js"></script>
+    <script>
+        createUserTable();
+        buttonSort();
+    </script>
 </body>
 </html>
