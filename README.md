@@ -22,6 +22,7 @@ https://adembendjama.github.io/Education-Site/
 ![image](https://user-images.githubusercontent.com/93732841/199827954-a74f8d07-7d0f-4872-bb6c-039784e9ce4e.png)
 
 ## Admin Page
+![image](https://user-images.githubusercontent.com/93732841/199828824-740d53af-9262-4ed6-9c65-7a1e3a608e17.png)
 ![image](https://user-images.githubusercontent.com/93732841/199714625-55881a66-9a4e-4a89-a215-1fd5bcd265ce.png)
 ![image](https://user-images.githubusercontent.com/93732841/199714650-06fdd108-d8c6-4f64-a7ee-a4e2f887e1e1.png)
 ![image](https://user-images.githubusercontent.com/93732841/199714666-67067e26-0258-4522-96b1-4cbddba2507e.png)
