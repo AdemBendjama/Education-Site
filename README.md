@@ -1,22 +1,25 @@
-# DAW-TP01
+# E-Learning Education Site
 
-Web Dev College Project
+## Team
+####  Credits to :
+[Farouk Rahal](https://www.facebook.com/farouk.rhl) \
+[Ahmed Amokrane](https://www.facebook.com/zmartCS)
 
-# Github Repo
+## Github Repo
 
 https://github.com/AdemBendjama/Education-Site
 
-# Site Link
+## Site Link
 
 https://adembendjama.github.io/Education-Site/
 
-# Profiles you can login with
+## Profiles you can login with
 
 1. "wm.facntic@univ-constantine2.dz"        => password: "webmaster" => [ Admin   Account ]
 2. "meriem.belguidoum@univ-constantine2.dz" => password: "meriembel" => [ Teacher Account ]
 3. "zen.bendjamaaadam2013@gmail.com"        => password: "adamben"   => [ Student Account ]
 
-# Education Website Template
+## Education Website Template
 
 ## Login Page 
 ![image](https://user-images.githubusercontent.com/93732841/199827954-a74f8d07-7d0f-4872-bb6c-039784e9ce4e.png)
